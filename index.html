@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #gameStartThree, #gameStartFive{
+            display: block;
+            margin: 10px 0px;
+        }
+        fieldset{
+            padding: 10px;
+            margin: 30px 10px;
+        }
+        span{
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Rock-Paper-Scissors</legend>
+        <input type="radio" name="userPickOfThree" value="rock" class="threeChoices" id="rock" checked>
+        <label for="rock">Rock</label>
+        <input type="radio" name="userPickOfThree" value="paper" class="threeChoices" id="paper">
+        <label for="paper">Paper</label>
+        <input type="radio" name="userPickOfThree" value="scissors" class="threeChoices" id="scissors">
+        <label for="scissors">Scissors</label>
+        <input type="button" name="" id="gameStartThree" value="GO">
+        <div>Computer pick:<span id="computerPickThreeWays"></span></div>
+        <div>
+            <h2>Score:</h2>
+            <p>You:<span id="yourScoreThree">0</span></p>
+            <p>Computer:<span id="computerScoreThree">0</span></p>
+        </div>
+        <input type="button" value="Reset score" id="resetThreeWays">
+    </fieldset>
+    <fieldset>
+        <legend>Rock-Paper-Scissors-Lizard-Spock</legend>
+        <input type="radio" name="userPickOfFive" value="rock" class="fiveChoices" id="rockOfFive" checked>
+        <label for="rockOfFive">Rock</label>
+        <input type="radio" name="userPickOfFive" value="paper" class="fiveChoices" id="paperOfFive">
+        <label for="paperOfFive">Paper</label>
+        <input type="radio" name="userPickOfFive" value="scissors" class="fiveChoices" id="scissorsOfFive">
+        <label for="scissorsOfFive">Scissors</label>
+        <input type="radio" name="userPickOfFive" value="lizard" class="fiveChoices" id="lizardOfFive">
+        <label for="lizardOfFive">Lizard</label>
+        <input type="radio" name="userPickOfFive" value="Spock" class="fiveChoices" id="SpockOfFive">
+        <label for="SpockOfFive">Spock</label>
+        <input type="button" name="" id="gameStartFive" value="GO">
+        <div>Computer pick:<span id="computerPickFiveWays"></span></div>
+        <div>
+            <h2>Score:</h2>
+            <p>You:<span id="yourScoreFive">0</span></p>
+            <p>Computer:<span id="computerScoreFive">0</span></p>
+        </div>
+        <input type="button" value="Reset score" id="resetFiveWays">
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>
